@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of [Your Name] - 3D Animator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moureesh K | 3D Animator</title>
+    <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My 3D Animation Portfolio</h1>
-        <h2>Where polygons meet personality and characters come to life—frame by frame!</h2>
-    </header>
-    <section>
-        <p>Hello! I'm Moureesh, a 3D animator with a passion for storytelling, movement, and making inanimate objects dance to life. Explore my work, and if my creations move you (pun intended), let's connect!</p>
-    </section>
+    <div class="theme-switch">
+        <button id="themeToggle" aria-label="Toggle theme">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Moureesh K</h1>
+                <p class="title">3D Animator at Zoho</p>
+                <p class="subtitle">Bringing imagination to life, one frame at a time</p>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <h2>Selected Work</h2>
+                <div class="grid">
+                    <div class="work-item">
+                        <div class="work-image"></div>
+                        <h3>Product Animation</h3>
+                        <p>3D product visualization for Zoho CRM</p>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image"></div>
+                        <h3>Character Animation</h3>
+                        <p>Mascot animation for Zoho Workplace</p>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image"></div>
+                        <h3>Motion Graphics</h3>
+                        <p>Explainer videos for Zoho One</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>With over 5 years of experience in 3D animation, I specialize in creating engaging visual content that tells compelling stories. At Zoho, I work on bringing products to life through animation, helping users better understand and connect with our software solutions.</p>
+                <div class="skills">
+                    <span>Maya</span>
+                    <span>Blender</span>
+                    <span>Cinema 4D</span>
+                    <span>After Effects</span>
+                    <span>Character Animation</span>
+                    <span>Motion Graphics</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Interested in collaboration? Let's create something amazing together.</p>
+                <a href="mailto:moureesh@zoho.com" class="button">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Moureesh K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
