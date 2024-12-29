@@ -121,20 +121,20 @@ h1 {
 
 .work-image-one {
     height: 200px;
-    background-image: url('/mm4.png');
+    background-image: url('/IMG_4004.jpg');
     background-size: cover;
     background-position: center;
 }
 .work-image-two {
     height: 200px;
-    background-image: url('/marker3.png');
+    background-image: url('/mm4.png');
     background-size: cover;
     background-position: center;
 }
 
 .work-image-three {
     height: 200px;
-    background-image: url('/mm4.png');
+    background-image: url('/IMG_4005.jpg');
     background-size: cover;
     background-position: center;
 }
