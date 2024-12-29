@@ -119,13 +119,25 @@ h1 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.work-image {
+.work-image-one {
     height: 200px;
     background-image: url('/mm4.png');
     background-size: cover;
     background-position: center;
 }
+.work-image-two {
+    height: 200px;
+    background-image: url('/marker3.png');
+    background-size: cover;
+    background-position: center;
+}
 
+.work-image-three {
+    height: 200px;
+    background-image: url('/mm4.png');
+    background-size: cover;
+    background-position: center;
+}
 
 .work-item h3 {
     padding: 1.5rem 1.5rem 0.5rem;
