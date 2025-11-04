@@ -1,92 +1,104 @@
-/* Reset */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global styles */
 body {
   background-color: #0e0e0e;
   color: #f5f5f5;
   font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  padding: 2rem;
 }
 
-/* Main container */
-.container {
-  max-width: 700px;
+/* Navigation */
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
 }
 
-/* Headings */
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #ccc;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+}
+
+/* Main section */
+.profile-section {
+  max-width: 800px;
+  padding: 1rem;
+}
+
 .name {
   font-family: 'Oswald', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
   letter-spacing: 2px;
-  margin-bottom: 0.3rem;
 }
 
-.section-title {
+.title {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.1rem;
-  color: #cfcfcf;
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+  color: #dcdcdc;
   letter-spacing: 1px;
-  margin-bottom: 2.5rem;
 }
 
-/* Bio */
 .bio {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.8;
-  letter-spacing: 0.3px;
-  color: #d6d6d6;
+  letter-spacing: 0.5px;
   margin-bottom: 3rem;
+  color: #d2d2d2;
 }
 
-/* Image */
 .image-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
 }
 
 .profile-img {
   width: 100%;
-  max-width: 320px;
-  border-radius: 6px;
+  max-width: 350px;
+  border-radius: 4px;
   object-fit: cover;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.profile-img:hover {
-  transform: scale(1.03);
-  opacity: 0.95;
 }
 
 /* Footer */
 .footer {
-  font-size: 0.8rem;
-  color: #8a8a8a;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #999;
   letter-spacing: 1px;
-  margin-top: 1rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .name {
-    font-size: 1.8rem;
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    gap: 1.5rem;
   }
+
   .bio {
     font-size: 0.95rem;
   }
+
   .profile-img {
     max-width: 80%;
   }
