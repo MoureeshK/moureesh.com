@@ -1,1 +1,106 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #ccc;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+}
+
+/* Main section */
+.profile-section {
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+  color: #dcdcdc;
+  letter-spacing: 1px;
+}
+
+.bio {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  margin-bottom: 3rem;
+  color: #d2d2d2;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+  }
+
+  .profile-img {
+    max-width: 80%;
+  }
+}
 
